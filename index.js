@@ -44,8 +44,29 @@ function searchEngine(event) {
   let searchData = document.querySelector("#search-input");
   searchCity(searchData.value);
 }
+function displayForecast() {
+  let forecast = document.querySelector("#weather-forecast");
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class='weather-forecast-container'><div class='col-2'> <div class="weather-forecast-day">${day}</div> <img
+            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
+            alt="scattered-clouds-day"
+            width="42" class='weather-forecast-icon'
+          /></div>
+        <div class="weather-forecast-temp">
+            <span class="weather-forecast-temp-max"><strong>18°</strong></span>
+            <span class="weather-forecast-temp-min">7°</span>
+          </div></div>`;
+  });
+  forecast.innerHTML = forecastHtml;
+}
 
 let search = document.querySelector(".search-form");
 search.addEventListener("submit", searchEngine);
 
 searchCity("Johannesburg");
+displayForecast();

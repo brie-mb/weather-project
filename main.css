@@ -115,12 +115,13 @@ footer {
   line-height: 20px;
   margin-bottom: 10px;
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .weather-forecast-temp-min {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .weather-forecast-temp {
   font-size: 14x;
   padding: 0 10px;
+  color: #f97200;
 }

@@ -105,8 +105,8 @@ footer {
   justify-content: space-around;
 }
 .weather-forecast-icon {
-  width: 88px;
-  height: 88px;
+  width: 78;
+  height: 78px;
   display: block;
   margin: 0 auto;
 }
@@ -118,7 +118,7 @@ footer {
   opacity: 0.4;
 }
 .weather-forecast-temp-min {
-  opacity: 0.3;
+  opacity: 0.7;
 }
 .weather-forecast-temp {
   font-size: 14x;
